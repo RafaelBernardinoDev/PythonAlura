@@ -22,7 +22,7 @@ class Restaurante:
     def ativo(self):
         return 'Ativo' if self._ativo else 'Desativado'
     
-    def StatusAlt(self):
+    def alterar_status(self):
         self._ativo = not self._ativo 
 
     def receber_avaliacao(self,cliente,nota):
