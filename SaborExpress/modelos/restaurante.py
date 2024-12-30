@@ -1,5 +1,4 @@
-from modelos.avaliacao import Avaliacao
-
+from avaliacao import Avaliacao
 
 class Restaurante:
     restaurantes = []
@@ -29,7 +28,14 @@ class Restaurante:
     def receber_avaliacao(self,cliente,nota):
         avalicao = Avaliacao(cliente,nota)
         self._avaliacao.append(avalicao)
-       
-
+        
+    @property  
+    def media_avaliacao(self):
+        if not self._avaliacao:
+            return 'Sem Avaliação'
+        soma = sum(avaliacao._nota for avaliacao in self._avaliacao)
+        quantidadeNotas = len(self._avaliacao)
+        media = round(soma / quantidadeNotas,2)
+        return media
 
 
