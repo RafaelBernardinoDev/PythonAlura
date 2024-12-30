@@ -20,9 +20,5 @@ class Restaurante:
     def StatusAlt(self):
         self._ativo = not self._ativo    
 
-restaurante_praca = Restaurante('coco Bambu', 'frutos do Mar')
-restaurante_praca.StatusAlt()
-restaurante_pizza = Restaurante('pizzaria do Fred', ' pizza')
 
-Restaurante.listar_restaurantes()
 
