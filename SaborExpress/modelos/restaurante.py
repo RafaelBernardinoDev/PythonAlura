@@ -1,4 +1,4 @@
-from avaliacao import Avaliacao
+from modelos.avaliacao import Avaliacao
 
 class Restaurante:
     restaurantes = []
@@ -16,7 +16,7 @@ class Restaurante:
     @classmethod
     def listar_restaurantes(cls):
         for restaurante in cls.restaurantes:
-            print(f'{restaurante._nome} | {restaurante._categoria} | {restaurante.ativo} ')
+            print(f'{restaurante._nome} | {restaurante._categoria} | {restaurante.ativo} | {restaurante.media_avaliacao} ')
 
     @property
     def ativo(self):
@@ -28,7 +28,7 @@ class Restaurante:
     def receber_avaliacao(self,cliente,nota):
         avalicao = Avaliacao(cliente,nota)
         self._avaliacao.append(avalicao)
-        
+
     @property  
     def media_avaliacao(self):
         if not self._avaliacao:
