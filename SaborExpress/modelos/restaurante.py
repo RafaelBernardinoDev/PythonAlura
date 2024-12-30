@@ -1,9 +1,14 @@
+from modelos.avaliacao import Avaliacao
+
+
 class Restaurante:
     restaurantes = []
+
     def __init__(self, nome, categoria):
         self._nome = nome.title()
         self._categoria = categoria.title()
         self._ativo = False
+        self._avaliacao = []
         Restaurante.restaurantes.append(self)
 
     def __str__(self):
@@ -12,13 +17,19 @@ class Restaurante:
     @classmethod
     def listar_restaurantes(cls):
         for restaurante in cls.restaurantes:
-            print(f'{restaurante._nome} | {restaurante._categoria} | {restaurante.ativo}')
+            print(f'{restaurante._nome} | {restaurante._categoria} | {restaurante.ativo} ')
 
     @property
     def ativo(self):
         return 'Ativo' if self._ativo else 'Desativado'
+    
     def StatusAlt(self):
-        self._ativo = not self._ativo    
+        self._ativo = not self._ativo 
+
+    def receber_avaliacao(self,cliente,nota):
+        avalicao = Avaliacao(cliente,nota)
+        self._avaliacao.append(avalicao)
+       
 
 
 
