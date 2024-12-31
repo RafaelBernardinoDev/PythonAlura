@@ -31,7 +31,6 @@ class AccountBank:
 owner1 = AccountBank('Steve Allison', 250.22)
 owner1.toggleStatus()
 owner2 = AccountBank('Michael Morin', 1850.22)
-owner2.toggleStatus()
 
 
 AccountBank.listOwner()

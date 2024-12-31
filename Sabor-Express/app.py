@@ -1,6 +1,6 @@
 import os
-from cardapio.bebida import Bebida
-from cardapio.prato import Prato
+# from cardapio.bebida import Bebida
+# from cardapio.prato import Prato
 
 
 restaurantes = [{'nome':'Praça', 'categoria':'Japonesa', 'ativo':False}, 
