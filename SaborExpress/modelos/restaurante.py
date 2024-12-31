@@ -35,7 +35,7 @@ class Restaurante:
             return 'Sem Avaliação'
         soma = sum(avaliacao._nota for avaliacao in self._avaliacao)
         quantidadeNotas = len(self._avaliacao)
-        media = round(soma / quantidadeNotas,2)
+        media = round(soma / quantidadeNotas,2) 
         return media
 
 
