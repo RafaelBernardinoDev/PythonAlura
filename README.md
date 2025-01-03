@@ -20,5 +20,6 @@ O projeto está organizado da seguinte forma:
 ├── 📄 main.py         # Arquivo principal com a execução do projeto
 ├── 📂 classes         # Classes principais e auxiliares
 ├── 📂 tests           # Testes unitários
-└── 📄 README.md       # Documentação do projeto ```
+└── 📄 README.md       # Documentação do projeto
+```
 
