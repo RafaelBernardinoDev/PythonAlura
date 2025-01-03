@@ -13,6 +13,7 @@ Manipulação de exceções
 Estrutura do Projeto
 O projeto está organizado da seguinte forma:
 
+<h2>Estrutura de Pastas</h2>
 📁 Restaurante
 ├── 📄 main.py         # Arquivo principal com a execução do projeto
 ├── 📂 classes         # Classes principais e auxiliares
