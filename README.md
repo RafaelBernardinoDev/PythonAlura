@@ -18,7 +18,7 @@ O projeto está organizado da seguinte forma:
 ```
     📁 Restaurante
 ├── 📄 main.py         # Arquivo principal com a execução do projeto
-├── 📂 classes         # Classes principais e auxiliares
+├── 📂 modelos         # Classes principais e auxiliares
 ├── 📂 tests           # Testes unitários
 └── 📄 README.md       # Documentação do projeto
 ```
